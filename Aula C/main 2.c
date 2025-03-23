@@ -10,9 +10,11 @@
 //
 //int main(int argc, const char * argv[]) {
 //    // insert code here...
-//    float *num;
-//    num = malloc(5 * sizeof(float));
-//    for (int i=0;i<5;i++) scanf("%f", &num[i]);
-//    for (int i=0;i<5;i++) printf("%.2f\n", num[i]);
+//    int *num;
+//    num = malloc(sizeof(int));
+//    *num = 123;
+//    printf("%d\n", *num);
+//    free(num);
+//    num = NULL;
 //    return 0;
 //}
