@@ -1,9 +1,4 @@
-//
-//  main.c
-//  Aula C
-//
-//  Created by Pedro Henrique Freire de Oliveira on 19/03/25.
-//
+//exercicio Com AUX
 
 #include <stdio.h>
 #include <stdlib.h>
