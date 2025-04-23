@@ -24,7 +24,8 @@ int isempty(ptr lista){
     return lista == NULL;
 }
 
-//insere um elemento
+//insere um elemento no inicio
+//cria um ponteiro auxiliar
 void push(ptr *lista, char elem){
     ptr aux = malloc(sizeof(struct nodo));
     aux->data = elem;
@@ -37,6 +38,21 @@ void pop(ptr *lista){
     aux = *lista;
     *lista = aux->link;
     free(aux);
+}
+
+char top(ptr lista) {
+    if (lista != NULL) {
+        return lista->data;
+    } else {
+        printf("Pilha vazia\n");
+        return '\0';
+    }
+}
+
+void destroy(ptr *lista) {
+    while (*lista != NULL) {
+        pop(lista);
+    }
 }
 
 void exibeLista(ptr lista){
@@ -88,3 +104,4 @@ int main(int argc, const char * argv[]) {
     return 0;
     
 }
+
